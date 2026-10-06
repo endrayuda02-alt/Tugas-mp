@@ -1,0 +1,332 @@
+/* =========================
+   DASAR
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    background: #ffffff;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background: rgba(15, 23, 42, 0.96);
+    backdrop-filter: blur(10px);
+}
+
+.navbar .nav-link {
+    color: #cbd5e1;
+    margin-left: 8px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #ffffff;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    background:
+        radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.25), transparent 30%),
+        linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+}
+
+.hero h1 span {
+    color: #60a5fa;
+}
+
+.hero .badge {
+    background: rgba(96, 165, 250, 0.15);
+    color: #93c5fd;
+    border: 1px solid rgba(147, 197, 253, 0.3);
+    padding: 10px 15px;
+}
+
+.school-name {
+    color: #cbd5e1;
+}
+
+.profile-wrapper {
+    display: inline-block;
+    padding: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.profile-img {
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 7px solid white;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-light {
+    background: #f8fafc;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title span {
+    color: #2563eb;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-weight: 800;
+    margin: 8px 0;
+}
+
+.section-title p {
+    color: #64748b;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.custom-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.card-title {
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.card-title i {
+    color: #2563eb;
+    margin-right: 8px;
+}
+
+/* =========================
+   DATA DIRI
+========================= */
+
+.profile-data > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.profile-data > div:last-child {
+    border-bottom: 0;
+}
+
+.profile-data span {
+    color: #64748b;
+}
+
+.profile-data strong {
+    text-align: right;
+}
+
+/* =========================
+   SKILL
+========================= */
+
+.skill {
+    margin-bottom: 24px;
+}
+
+.skill > div:first-child {
+    margin-bottom: 8px;
+}
+
+.skill .progress {
+    height: 10px;
+    border-radius: 20px;
+    background: #e2e8f0;
+}
+
+.skill .progress-bar {
+    background: #2563eb;
+    border-radius: 20px;
+}
+
+/* =========================
+   JURUSAN
+========================= */
+
+.nav-pills .nav-link {
+    color: #334155;
+    border-radius: 50px;
+}
+
+.nav-pills .nav-link.active {
+    background: #2563eb;
+}
+
+.major-card {
+    border: 0;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.major-icon {
+    font-size: 50px;
+    color: #2563eb;
+}
+
+.major-card h3 {
+    margin: 15px 0;
+    font-weight: 700;
+}
+
+.major-card p {
+    color: #64748b;
+}
+
+/* =========================
+   KONTAK
+========================= */
+
+.section-dark {
+    background: #0f172a;
+    color: white;
+}
+
+.section-title.light p {
+    color: #94a3b8;
+}
+
+.section-title.light span {
+    color: #60a5fa;
+}
+
+.contact-box {
+    height: 100%;
+    text-align: center;
+    padding: 30px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.contact-box i {
+    font-size: 35px;
+    color: #60a5fa;
+}
+
+.contact-box h5 {
+    margin-top: 15px;
+}
+
+.contact-box p {
+    color: #94a3b8;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #020617;
+    color: #cbd5e1;
+    padding: 60px 0 25px;
+}
+
+footer h4,
+footer h5 {
+    color: white;
+}
+
+footer p {
+    color: #94a3b8;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 8px;
+}
+
+.footer-menu a {
+    color: #94a3b8;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    color: white;
+}
+
+footer hr {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+    .hero {
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .navbar .nav-link {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .section-padding {
+        padding: 75px 0;
+    }
+
+    .profile-img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .profile-data > div {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .profile-data strong {
+        text-align: left;
+    }
+}
