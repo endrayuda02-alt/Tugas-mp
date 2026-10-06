@@ -1,0 +1,735 @@
+/* =========================
+   GLOBAL
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #0d1117;
+    color: #e6edf3;
+}
+
+section {
+    scroll-margin-top: 75px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background: rgba(13, 17, 23, 0.94);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.brand-r {
+    color: #7dd3fc;
+}
+
+.brand-dot {
+    color: #94a3b8;
+}
+
+.navbar .nav-link {
+    color: #aeb8c4;
+    margin-left: 12px;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #7dd3fc;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(56, 189, 248, 0.10),
+            transparent 30%
+        ),
+        #0d1117;
+
+    padding: 120px 0 80px;
+}
+
+.badge-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 14px;
+
+    border: 1px solid rgba(125, 211, 252, 0.25);
+    border-radius: 50px;
+
+    color: #aeb8c4;
+    background: rgba(125, 211, 252, 0.05);
+
+    font-size: 0.85rem;
+}
+
+.badge-status i {
+    color: #7dd3fc;
+    font-size: 7px;
+}
+
+.hero-title {
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    line-height: 1.05;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.accent-text {
+    color: #7dd3fc;
+}
+
+.hero-description {
+    color: #9ca8b5;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 650px;
+}
+
+.school-name {
+    color: #c7d0da;
+    margin-top: 20px;
+}
+
+.school-name i {
+    color: #7dd3fc;
+    margin-right: 8px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.btn-main {
+    background: #7dd3fc;
+    border: none;
+    color: #071018;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background: #a5e3fc;
+    color: #071018;
+    transform: translateY(-2px);
+}
+
+.btn-outline-main {
+    border: 1px solid #354352;
+    color: #c7d0da;
+    padding: 12px 22px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn-outline-main:hover {
+    border-color: #7dd3fc;
+    color: #7dd3fc;
+}
+
+
+/* =========================
+   FOTO PROFIL
+========================= */
+
+.profile-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-circle {
+    width: 320px;
+    height: 320px;
+
+    border-radius: 50%;
+
+    padding: 8px;
+
+    background: #18222d;
+
+    border: 1px solid rgba(125, 211, 252, 0.3);
+
+    box-shadow:
+        0 0 50px rgba(56, 189, 248, 0.08);
+
+    overflow: hidden;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    background: #202a35;
+}
+
+.profile-decoration {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(125, 211, 252, 0.25);
+}
+
+.decoration-one {
+    width: 350px;
+    height: 350px;
+    top: -15px;
+    left: -15px;
+}
+
+.decoration-two {
+    width: 370px;
+    height: 370px;
+    top: -25px;
+    left: -25px;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.section-padding {
+    padding: 110px 0;
+}
+
+.section-dark {
+    background: #10161d;
+}
+
+.section-heading {
+    margin-bottom: 55px;
+    max-width: 700px;
+}
+
+.section-heading span,
+.section-label {
+    color: #7dd3fc;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+.section-heading p {
+    color: #8f9aa7;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.glass-card {
+    background: #141b23;
+    border: 1px solid #26313d;
+    border-radius: 18px;
+    padding: 30px;
+}
+
+.card-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: rgba(125, 211, 252, 0.08);
+    color: #7dd3fc;
+
+    font-size: 1.3rem;
+
+    margin-bottom: 20px;
+}
+
+.glass-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.card-description {
+    color: #8f9aa7;
+}
+
+
+/* =========================
+   DATA DIRI
+========================= */
+
+.data-list {
+    margin-top: 15px;
+}
+
+.data-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #26313d;
+}
+
+.data-item:last-child {
+    border-bottom: none;
+}
+
+.data-item span {
+    color: #7f8a97;
+}
+
+.data-item strong {
+    color: #dce4ec;
+    text-align: right;
+}
+
+
+/* =========================
+   SKILL
+========================= */
+
+.skill-box {
+    margin-top: 25px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+
+    color: #c8d0d9;
+
+    margin-bottom: 8px;
+}
+
+.skill-info span:last-child {
+    color: #7dd3fc;
+}
+
+.progress {
+    height: 7px;
+    background: #222d38;
+    border-radius: 20px;
+}
+
+.progress-bar {
+    background: #7dd3fc;
+    border-radius: 20px;
+}
+
+
+/* =========================
+   JURUSAN
+========================= */
+
+.jurusan-tabs {
+    gap: 10px;
+}
+
+.jurusan-tabs .nav-link {
+    color: #9ca8b5;
+    background: #151d26;
+    border: 1px solid #293541;
+    border-radius: 9px;
+    padding: 10px 18px;
+    transition: 0.3s;
+}
+
+.jurusan-tabs .nav-link:hover {
+    color: #7dd3fc;
+    border-color: #405160;
+}
+
+.jurusan-tabs .nav-link.active {
+    color: #071018;
+    background: #7dd3fc;
+    border-color: #7dd3fc;
+}
+
+.jurusan-image {
+    height: 330px;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    background: #18222d;
+    border: 1px solid #2a3744;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jurusan-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.jurusan-number {
+    color: #7dd3fc;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.tab-pane h3 {
+    font-size: 2.4rem;
+    margin-top: 10px;
+}
+
+.tab-pane > div > div > p {
+    color: #929eab;
+    line-height: 1.8;
+}
+
+.visi-misi {
+    margin-top: 30px;
+}
+
+.visi-misi > div {
+    padding: 20px;
+    margin-bottom: 15px;
+
+    background: #141c24;
+
+    border-left: 3px solid #7dd3fc;
+    border-radius: 8px;
+}
+
+.visi-misi h5 {
+    color: #dce4ec;
+}
+
+.visi-misi h5 i {
+    color: #7dd3fc;
+    margin-right: 8px;
+}
+
+.visi-misi p {
+    color: #8f9aa7;
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   MAP
+========================= */
+
+.map-card {
+    overflow: hidden;
+    border-radius: 18px;
+    border: 1px solid #293541;
+    background: #141b23;
+}
+
+.map-card iframe {
+    display: block;
+}
+
+.location-card {
+    height: 100%;
+}
+
+.location-card > p {
+    color: #929eab;
+    line-height: 1.7;
+}
+
+.location-card hr {
+    border-color: #2b3743;
+    margin: 25px 0;
+}
+
+.location-card h5 {
+    margin-bottom: 12px;
+}
+
+.location-card h5 i {
+    color: #7dd3fc;
+    margin-right: 7px;
+}
+
+.small-text {
+    font-size: 0.9rem;
+}
+
+.manual-route {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+
+    color: #7dd3fc;
+
+    font-size: 0.9rem;
+}
+
+.manual-route:hover {
+    color: #a5e3fc;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    padding: 100px 0;
+    background: #10161d;
+}
+
+.contact-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    padding: 45px;
+
+    background: #141c24;
+    border: 1px solid #293541;
+    border-radius: 20px;
+}
+
+.contact-card h2 {
+    margin-top: 10px;
+}
+
+.contact-card p {
+    color: #8f9aa7;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-list a {
+    color: #cbd5df;
+    transition: 0.3s;
+}
+
+.contact-list a:hover {
+    color: #7dd3fc;
+}
+
+.contact-list i {
+    color: #7dd3fc;
+    margin-right: 10px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 60px 0 25px;
+    background: #0a0e13;
+}
+
+footer h4 {
+    font-size: 1.5rem;
+}
+
+footer h5 {
+    margin-bottom: 20px;
+}
+
+footer p {
+    color: #7f8a97;
+    line-height: 1.7;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer li a {
+    color: #7f8a97;
+    transition: 0.3s;
+}
+
+footer li a:hover {
+    color: #7dd3fc;
+}
+
+footer hr {
+    border-color: #222c36;
+    margin: 40px 0 20px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+    .navbar .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .hero-section {
+        text-align: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .profile-wrapper {
+        margin-top: 30px;
+    }
+
+    .profile-circle {
+        width: 270px;
+        height: 270px;
+    }
+
+    .decoration-one {
+        width: 300px;
+        height: 300px;
+    }
+
+    .decoration-two {
+        width: 320px;
+        height: 320px;
+    }
+
+    .contact-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .section-padding {
+        padding: 80px 0;
+    }
+
+    .hero-section {
+        padding-top: 120px;
+    }
+
+    .hero-title {
+        font-size: 2.7rem;
+    }
+
+    .profile-circle {
+        width: 220px;
+        height: 220px;
+    }
+
+    .decoration-one {
+        width: 245px;
+        height: 245px;
+    }
+
+    .decoration-two {
+        width: 265px;
+        height: 265px;
+    }
+
+    .data-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .data-item strong {
+        text-align: left;
+    }
+
+    .jurusan-tabs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .jurusan-tabs .nav-link {
+        width: 100%;
+    }
+
+    .jurusan-image {
+        height: 250px;
+    }
+
+    .tab-pane h3 {
+        font-size: 1.9rem;
+    }
+
+    .contact-card {
+        padding: 30px;
+    }
+
+}
